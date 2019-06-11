@@ -24,12 +24,15 @@ c. # of records failed
 ## Result
 ![alt text](sample.png "")
 ## Challenges:
-For this program, some of the most challenging aspect I had to face was working with SQLite in Java. I had worked with postgresql and never had to create a table. Therefore, this was new to me. In class we are given most of the file so I had to learned we have to download sqlite-jdbc-3.27.2.1(The version I download) in order to run SQLite in Java. However, some of the DDL were the same as postgresql.  Another challenge was learning java commands and syntax for functions that work with CSV files.
+For this program, some of the most challenging aspect I had to face was working with SQLite in Java. I had worked with postgresql and never had to create a table. Therefore, this was new to me. In class we are given most of the file so I had to learned we have to download sqlite-jdbc-3.27.2.1(The version I download) in order to run SQLite in Java. However, some of the DDL were the same as postgresql.  Another challenge was learning java commands and syntax for functions that work with CSV files. In addition, I was trying to understand the data and attributes.
 
 ## Instructions:
 You will need a SQLite-JDBC jar file to run the program:
 This is where to download the version I am using https://bitbucket.org/xerial/sqlite-jdbc/downloads/
 The next step is running the main function. I personally used intellij but eclipse can be use too. I used DB Browser for sqlite to view the database. It can be download at https://sqlitebrowser.org/
+The DDL commands I used were
+1. create table IF NOT EXISTS people(firstName,LastName,website,gender,img,company,cost,H,I,city)
+2. INSERT INTO people(firstName,LastName,website,gender,img,company,cost,H,I,city)  VALUES (?,?,?,?,?,?,?,?,?,?)
 
 
 ## Approach:
